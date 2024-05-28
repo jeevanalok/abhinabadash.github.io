@@ -10937,15 +10937,15 @@ const ease = {
 $(function () {
   "use strict";
   $(window).on("scroll", function () {
-    var o = $("#about").offset().top + 300,
-      t = $("#about").offset().top + $("#about").outerHeight(),
+    var o = $("#case-study").offset().top + 300,
+      t = $("#case-study").offset().top + $("#case-study").outerHeight(),
       s = $(window).scrollTop() + $(window).height(),
       e = $(window).scrollTop();
     o < s && e < t
       ? $(".about-img-container").addClass("img-poster")
       : $(".about-img-container").removeClass("img-poster");
-    (o = $("#works").offset().top + 300),
-      (s = $("#works").offset().top + $("#works").outerHeight()),
+    (o = $("#experience").offset().top + 300),
+      (s = $("#experience").offset().top + $("#experience").outerHeight()),
       (e = $(window).scrollTop() + $(window).height()),
       (t = $(window).scrollTop());
     o < e && t < s
@@ -10958,10 +10958,7 @@ $(function () {
     o < t && s < e
       ? $(".services-img-container").addClass("img-poster")
       : $(".services-img-container").removeClass("img-poster");
-    (o = $("#news").offset().top + 300),
-      (t = $("#news").offset().top + $("#news").outerHeight()),
-      (s = $(window).scrollTop() + $(window).height()),
-      (e = $(window).scrollTop());
+
     o < s && e < t
       ? $(".news-img-container").addClass("img-poster")
       : $(".news-img-container").removeClass("img-poster");

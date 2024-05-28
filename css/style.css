@@ -71,6 +71,17 @@
 
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. works IMG BACKGROUND */
+
+@font-face {
+  font-family: clashdisplay;
+  src: url(font/ClashDisplay-Variable.ttf)
+}
+
+@font-face {
+  font-family: archivo;
+  src: url(font/Archivo-Variable.ttf)
+}
+
 .item-works-01 {
   background-image: url(../img/works/1.jpg);
 }
@@ -323,7 +334,7 @@ input[type="submit"]::-moz-focus-inner {
 
 /* 3. layout */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -437,13 +448,12 @@ strong {
 /* 4. headings */
 h1.home-page-title {
   position: relative;
-  font-family: 'Oswald', sans-serif;
-  font-size: 70px;
-  font-weight: 400;
+  font-family: 'clashdisplay', sans-serif;
+  font-size: 60px;
+  font-weight: 500;
   color: #111;
   text-align: left;
   text-transform: none;
-  letter-spacing: -0.35vw;
   line-height: 1;
   margin: 2rem 0 -4px -8px;
   z-index: 1;
@@ -489,14 +499,12 @@ h1.home-page-title {
 }
 
 h2.home-page-title-all {
-  font-family: 'Oswald', sans-serif;
-  font-size: 80px;
+  font-family: 'clashdisplay', sans-serif;
+  font-size: 64px;
   line-height: 1;
   font-style: normal;
-  text-transform: uppercase;
   text-align: left;
-  font-weight: 700;
-  letter-spacing: -0.05em;
+  font-weight: 500;
   color: #5f5f5f;
   margin: -11px 0 -2px 0;
 }
@@ -510,7 +518,7 @@ h2.home-page-title-all {
 
 @media only screen and (max-width: 1200px) {
   h2.home-page-title-all {
-    font-size: 60px;
+    font-size: 44px;
     margin: -6px 0 0 0;
   }
 }
@@ -518,7 +526,7 @@ h2.home-page-title-all {
 
 /* 4.1. section headings */
 h2.section-heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -702,7 +710,7 @@ ul.social-icons-home a:hover {
 /* 7.2. social icons team */
 .social-icons {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: normal;
@@ -759,7 +767,7 @@ ul.social-icons-home a:hover {
 .social-icons li a:visited,
 .social-icons li a:active,
 .social-icons li a:focus {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: normal;
@@ -798,8 +806,8 @@ ul.social-icons-home a:hover {
 
 h3.cd-timeline-name {
   position: relative;
-  font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  font-family: 'archivo', sans-serif;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
@@ -812,7 +820,7 @@ h3.cd-timeline-name {
 
 h4.cd-timeline-date {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -825,7 +833,7 @@ h4.cd-timeline-date {
 
 .cd-timeline-position {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1062,12 +1070,10 @@ h4.cd-timeline-date {
 .panel-title {
   position: relative;
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 17px;
   font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.04em;
+  font-weight: 600;
   color: #5f5f5f;
   margin: 0;
 }
@@ -1584,7 +1590,7 @@ nav.navigation-menu li:last-child {
 }
 
 nav.navigation-menu a {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1623,7 +1629,7 @@ nav.navigation-menu a {
 /* 12. introduction */
 .introduction h3 {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1711,6 +1717,11 @@ nav.navigation-menu a {
   .fireOT {
     z-index: 1;
   }
+
+  .fireOT-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
@@ -1722,6 +1733,7 @@ nav.navigation-menu a {
     position: relative !important;
     width: 100%;
     height: auto !important;
+
   }
 }
 
@@ -1839,7 +1851,7 @@ nav.navigation-menu a {
     float: none;
     position: relative !important;
     width: 100%;
-    min-height: 500px !important;
+    max-height: 315px !important;
   }
 }
 
@@ -1930,6 +1942,13 @@ nav.navigation-menu a {
 
 .overlay-dark-60:before {
   background: rgba(0, 0, 0, .6);
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  pointer-events: none;
+}
+
+.overlay-dark-20:before {
+  background: rgba(0, 0, 0, .2);
   -webkit-pointer-events: none;
   -moz-pointer-events: none;
   pointer-events: none;
@@ -2259,7 +2278,7 @@ a:hover.link-effect::after {
 /* 20. copyright */
 .copyright {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2281,7 +2300,7 @@ a:hover.link-effect::after {
   position: fixed;
   bottom: 51px;
   right: 55px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2442,12 +2461,11 @@ a:hover.link-effect::after {
 h2.section-subheading {
   position: relative;
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -0.04em;
   color: #5f5f5f;
 }
 
@@ -2458,7 +2476,7 @@ h2.section-subheading {
 }
 
 .section-subheading {
-  margin: 0 auto -6px auto;
+  margin: 0 auto 16px auto;
 }
 
 h2.section-subheading::after {
@@ -2512,7 +2530,7 @@ form {
   padding: 5px 5px;
   background: none;
   margin: 10px 0 10px 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 13px;
   letter-spacing: 0.05em;
   line-height: 1.5;
@@ -2538,7 +2556,7 @@ textarea {
   padding: 5px 5px;
   background: none;
   margin: 5px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 13px;
   letter-spacing: 0.05em;
   line-height: 1.5;
@@ -2582,7 +2600,7 @@ textarea {
 }
 
 .success {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -3014,7 +3032,7 @@ button.button-all {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3197,7 +3215,7 @@ button.button-all {
   -ms-transition: 1.2s cubic-bezier(0.67, 0.02, 0.2, 0.97) 2s;
   -o-transition: 1.2s cubic-bezier(0.67, 0.02, 0.2, 0.97) 2s;
   transition: 1.2s cubic-bezier(0.67, 0.02, 0.2, 0.97) 2s;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -3229,13 +3247,12 @@ button.button-all {
 
 .right-side h2 {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   /* text-transform: uppercase; */
   text-align: left;
-  letter-spacing: -0.04em;
   color: #fff;
   line-height: 1.25;
   margin: -5px 0 3px 0;
@@ -3294,6 +3311,12 @@ button.button-all {
 @media only screen and (max-width: 880px) {
   .slide-img img {
     width: 100vw;
+    max-height: 315px;
+  }
+
+  .case-study-right-side {
+    display: none;
+
   }
 }
 
@@ -3561,7 +3584,7 @@ button.button-all {
 /* 32. typed text */
 h1.typed-effect {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 85px;
   font-weight: 700;
   color: #111;
@@ -3750,7 +3773,7 @@ p.text {
 
 .blog-quote p {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -3837,7 +3860,7 @@ p.text {
 /* 36. news */
 .news-info-title {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -3858,7 +3881,7 @@ p.text {
 
 .news-info-date {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3870,7 +3893,7 @@ p.text {
 
 .news-info-category {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -3892,7 +3915,7 @@ p.text {
 
 /* 37. team / news headers  */
 .section-title-inner {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3984,7 +4007,7 @@ h1.section-header {
 h6.about,
 h6.contact {
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'clashdisplay', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -5249,13 +5272,14 @@ h6.contact {
   }
 }
 
+
 .divider-xl {
   height: 200px;
 }
 
 @media only screen and (max-width: 768px) {
   .divider-xl {
-    height: 100px;
+    height: 50px;
   }
 }
 
@@ -5309,7 +5333,7 @@ h6.contact {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-top: 1rem
   }
