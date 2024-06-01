@@ -18200,6 +18200,15 @@ else if (-1 != nAgt.indexOf("Trident")) {
 // MIT License
 // Copyright (c) 2017 LA Watts
 function sizeEverything() {
+  if (screen.width <= 880) {
+    $(".logo").attr("src", "./img/logo-light.png");
+    $(".home-page-title").html("Abhinaba Dash");
+  } else {
+    $(".logo").attr("src", "./img/logo-dark.png");
+    $(".home-page-title").html(
+      " Crafting brand identities and seamless experiences"
+    );
+  }
   (dimensions = coverDimensions(16, 9, window.innerWidth, window.innerHeight)),
     $el.css({
       position: "absolute",

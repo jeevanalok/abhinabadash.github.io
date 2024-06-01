@@ -486,7 +486,6 @@ h1.home-page-title {
 @media only screen and (max-width: 880px) {
   h1.home-page-title {
     color: #fff;
-    display: none;
 
   }
 }
@@ -495,6 +494,7 @@ h1.home-page-title {
   h1.home-page-title {
     font-size: 48px;
     margin: 0 0 -1px -3px;
+    display: block;
   }
 }
 
@@ -597,24 +597,21 @@ h2.section-heading {
 .logo {
   position: absolute;
   display: block;
-  width: 59px;
-  height: 35px;
+  width: 200px;
   top: 55px;
   left: 55px;
-  background: url(../img/logo-dark.png) no-repeat;
+  /* background: url(../img/logo-light2.png) no-repeat; */
   z-index: 98;
 }
 
-@media only screen and (max-width: 880px) {
-  .logo {
-    background: url(../img/logo-light.png) no-repeat;
-  }
-}
+
 
 @media only screen and (max-width: 768px) {
   .logo {
     top: 25px;
     left: 25px;
+    width: 60px;
+
   }
 }
 
@@ -806,23 +803,22 @@ ul.social-icons-home a:hover {
 
 h3.cd-timeline-name {
   position: relative;
-  font-family: 'archivo', sans-serif;
-  font-size: 28px;
+  font-family: 'clashdisplay', sans-serif;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: left;
-  letter-spacing: -0.04em;
   color: #5f5f5f;
-  line-height: 1.25;
+  line-height: 1;
   margin: -6px 0 -4px 0;
 }
 
 h4.cd-timeline-date {
   position: relative;
-  font-family: 'clashdisplay', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: left;
   letter-spacing: normal;
@@ -833,11 +829,11 @@ h4.cd-timeline-date {
 
 .cd-timeline-position {
   display: block;
-  font-family: 'clashdisplay', sans-serif;
+  font-family: 'archivo', sans-serif;
   font-size: 17px;
   font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 500;
+  text-transform: none;
   padding: 0;
   text-align: left;
   letter-spacing: -0.04em;
@@ -2728,7 +2724,7 @@ textarea:focus:-moz-placeholder {
 
 @media only screen and (max-width: 768px) {
   .the-button-wrapper {
-    width: 175px;
+    width: 100px;
     margin: -3px 0 1px 6px;
   }
 }
@@ -2819,9 +2815,11 @@ textarea:focus:-moz-placeholder {
 
 @media only screen and (max-width: 768px) {
   .the-button {
-    width: 175px;
+    width: 100px;
     font-size: 10px;
-    letter-spacing: 0.10em;
+    padding-left: 8px;
+    padding-right: 8px;
+    letter-spacing: 0;
   }
 }
 
@@ -3441,6 +3439,33 @@ button.button-all {
   left: 0;
 }
 
+.tools {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.38rem;
+  flex-wrap: wrap;
+}
+
+
+.tools img {
+  height: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .tools {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    align-items: center;
+    gap: 3rem
+  }
+
+}
 
 /* 30. videos */
 /* 30.1. YouTube video */
@@ -5241,7 +5266,7 @@ h6.contact {
 }
 
 .divider-s {
-  height: 0px;
+  height: 10px;
 }
 
 .divider-m {
@@ -5319,11 +5344,12 @@ h6.contact {
 
 .project-resume {
   display: flex;
-  flex-direction: column;
-  gap: 60px;
+  flex-direction: row;
+  gap: 3rem;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 16rem
+  margin: auto;
+  margin-top:10rem;
 }
 
 
