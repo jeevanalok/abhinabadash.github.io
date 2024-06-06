@@ -18202,11 +18202,11 @@ else if (-1 != nAgt.indexOf("Trident")) {
 function sizeEverything() {
   if (screen.width <= 880) {
     $(".logo").attr("src", "./img/logo-light.png");
-    $(".home-page-title").html("Abhinaba Dash");
+    $(".home-page-title").html("Abhinaba Dash <br> <p class='sub-title'>Crafting brand identities and seamless user experiences</p>");
   } else {
     $(".logo").attr("src", "./img/logo-dark.png");
     $(".home-page-title").html(
-      " Crafting brand identities and seamless experiences"
+      " Crafting brand identities and seamless user experiences"
     );
   }
   (dimensions = coverDimensions(16, 9, window.innerWidth, window.innerHeight)),
